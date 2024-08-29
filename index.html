@@ -7,14 +7,18 @@
     <meta name="keywords" content="Jonas Andresen, IT Administrator, Windows Server, Automation, Cybersecurity, Edmonton, CV, Resume">
     <meta name="author" content="Jonas Andresen">
     <title>Jonas Andresen</title>
-    
+
     <!-- Favicon links -->
     <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-    
+
+    <!-- Icon libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@v4/iconsfont/simple-icons.min.css">
+
     <style>
         body {
             font-family: Helvetica, Arial, sans-serif;
@@ -84,6 +88,23 @@
         .experience p, .education p {
             margin: 5px 0;
         }
+
+        /* Skills section */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        .skill-item {
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+        }
+        .skill-item i, .skill-item svg {
+            margin-right: 8px;
+            font-size: 1.5em;
+        }
     </style>
 </head>
 <body>
@@ -99,7 +120,7 @@
 
     <section>
         <h3>Professional Summary</h3>
-        <p>IT Professional with 10 years of IT administration experience in small-medium businesses to large corporate infrastructures. Focus on Windows server management and client deployment through automation and scripting.</p>
+        <p>IT Professional with 10 years of IT administration experience in small-medium businesses to large corporate infrastructures. <br>Focus on Windows server management and client deployment through automation and scripting.</p>
     </section>
 
     <section>
@@ -159,29 +180,20 @@
         </div>
     </section>
 
-    <!--
     <section>
-        <h3>Certifications</h3>
-        <ul>
-            <li>Foundations of Cybersecurity - Coursera</li>
-            <li>Play It Safe: Manage Security Risks - Coursera</li>
-            <li>Connect and Protect: Networks and Network Security - Coursera</li>
-        </ul>
+        <h3>Skills</h3>
+        <div class="skills">
+            <div class="skill-item"><i class="fab fa-microsoft"></i> Azure AD, Microsoft 365</div>
+            <div class="skill-item"><i class="fas fa-server"></i> Windows Server 2016+</div>
+            <div class="skill-item"><i class="fab fa-vmware"></i> VMware</div>
+            <div class="skill-item"><i class="fab fa-windows"></i> Windows 10/11</div>
+            <div class="skill-item"><i class="fas fa-tools"></i> PDQ Inventory & Deploy</div>
+            <div class="skill-item"><i class="fab fa-cloudflare"></i> CrowdStrike Falcon</div>
+            <div class="skill-item"><i class="fas fa-shield-alt"></i> Abnormal Security</div>
+            <div class="skill-item"><i class="fas fa-sync-alt"></i> PowerAutomate</div>
+            <div class="skill-item"><i class="fas fa-code"></i> PowerShell</div>
+        </div>
     </section>
-
-    <section>
-        <h3>Technical Skills</h3>
-        <ul>
-            <li>Windows Server Administration (2012, 2016, 2019)</li>
-            <li>Active Directory Management</li>
-            <li>Microsoft 365 Administration</li>
-            <li>Azure Active Directory</li>
-            <li>Virtualization (VMware ESXi)</li>
-            <li>Backup Solutions (Veeam)</li>
-            <li>PowerShell Scripting</li>
-        </ul>
-    </section>
-    -->
 
     <section>
         <h3>Languages</h3>
@@ -189,10 +201,4 @@
             <li>Danish (Native)</li>
             <li>English (Fluent)</li>
         </ul>
-    </section>
-
-    <footer>
-        <p>Contact: <a href="mailto:cv@jcsa.ca">cv@jcsa.ca</a></p>
-    </footer>
-</body>
-</html>
+    </section
