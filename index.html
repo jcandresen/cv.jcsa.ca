@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jonas Andresen's professional CV, showcasing over 10 years of experience in IT administration, specializing in Windows server management, automation, and cybersecurity.">
+    <meta name="description" content="Jonas Andresen's professional CV, showcasing his over 10 years of experience in IT administration, specializing in Windows server management, automation, and cybersecurity.">
     <meta name="keywords" content="Jonas Andresen, IT Administrator, Windows Server, Automation, Cybersecurity, Edmonton, CV, Resume">
     <meta name="author" content="Jonas Andresen">
     <title>Jonas Andresen</title>
@@ -46,21 +46,32 @@
             color: #333;
         }
         header {
-            text-align: center;
-            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px; /* Reduced whitespace here */
         }
-        h1 {
+        .name-title {
+            text-align: center;
+            flex: 1;
+        }
+        .name-title h1 {
             margin-bottom: 5px;
             font-size: 2em;
         }
-        h2 {
+        .name-title h2 {
             color: #555;
             margin-top: 0;
-            margin-bottom: 10px;
+            margin-bottom: 5px; /* Reduced whitespace here */
             font-size: 1.2em;
         }
-        p {
-            margin: 5px 0;
+        .contact-info {
+            text-align: right;
+            padding-left: 20px;
+        }
+        .contact-info a {
+            display: block;
+            margin-bottom: 5px;
         }
         .download-link {
             margin-top: 10px;
@@ -131,12 +142,16 @@
 </head>
 <body>
     <header>
-        <h1>Jonas Andresen</h1>
-        <h2>Windows Systems Administrator</h2>
-        <p>Edmonton, Alberta, Canada</p>
-        <p>Email: <a href="mailto:cv@jcsa.ca">cv@jcsa.ca</a></p>
-        <div class="download-link">
-            <a href="https://cv.jcsa.ca/Jonas%20Andresen-PrintOut.pdf" download>Download My CV (PDF)</a>
+        <div class="name-title">
+            <h1>Jonas Andresen</h1>
+            <h2>Windows Systems Administrator</h2>
+            <p>Edmonton, Alberta, Canada</p>
+        </div>
+        <div class="contact-info">
+            <a href="mailto:cv@jcsa.ca">Email: cv@jcsa.ca</a>
+            <div class="download-link">
+                <a href="https://cv.jcsa.ca/Jonas%20Andresen-PrintOut.pdf" download>Download My CV (PDF)</a>
+            </div>
         </div>
     </header>
 
@@ -207,7 +222,7 @@
         <div class="skills">
             <div class="skill-item"><i class="fab fa-microsoft"></i> Azure AD, Microsoft 365</div>
             <div class="skill-item"><i class="fas fa-server"></i> Windows Server 2016+</div>
-            <div class="skill-item"><i class="fab fa-vmware"></i> VMware</div>
+            <div class="skill-item"><i class="si si-vmware"></i> VMware</div> <!-- Updated with VMware icon -->
             <div class="skill-item"><i class="fab fa-windows"></i> Windows 10/11</div>
             <div class="skill-item"><i class="fas fa-tools"></i> PDQ Inventory & Deploy</div>
             <div class="skill-item"><i class="fab fa-cloudflare"></i> CrowdStrike Falcon</div>
