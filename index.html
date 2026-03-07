@@ -6,7 +6,11 @@
     <meta name="description" content="Jonas Andresen's professional CV, showcasing his over 10 years of experience in IT administration, specializing in Windows server management, automation, and cybersecurity.">
     <meta name="keywords" content="Jonas Andresen, IT Administrator, Windows Server, Automation, Cybersecurity, Edmonton, CV, Resume">
     <meta name="author" content="Jonas Andresen">
-    <title>Jonas Andresen</title>
+    <meta property="og:title" content="Jonas Andresen – Windows Systems Administrator">
+    <meta property="og:description" content="IT Professional with 13+ years of experience in Windows server management, automation, and cybersecurity.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://cv.jcsa.ca/">
+    <title>Jonas Andresen – Windows Systems Administrator</title>
 
     <!-- Default Favicon (Light Mode) -->
     <link rel="icon" href="favicon/favicon_black.ico" type="image/x-icon">
@@ -138,6 +142,53 @@
             margin-right: 10px;
             font-size: 2em;
         }
+
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a;
+                color: #e0e0e0;
+            }
+            section {
+                background-color: #2a2a2a;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            }
+            h3 {
+                border-bottom-color: #444;
+            }
+            .name-title h2 {
+                color: #aaa;
+            }
+            .experience, .education {
+                background-color: #333;
+            }
+            .skill-item {
+                background-color: #333;
+            }
+            footer {
+                color: #aaa;
+            }
+            footer a {
+                color: #4da6ff;
+            }
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .contact-info {
+                text-align: center;
+                padding-left: 0;
+                padding-top: 10px;
+            }
+            .skills {
+                justify-content: flex-start;
+            }
+        }
     </style>
 </head>
 <body>
@@ -155,9 +206,10 @@
         </div>
     </header>
 
+    <main>
     <section>
         <h3>Professional Summary</h3>
-        <p>IT Professional with 10 years of IT administration experience in small-medium businesses to large corporate infrastructures. <br>Focus on Windows server management and client deployment through automation and scripting.</p>
+        <p>IT Professional with 13+ years of IT administration experience in small-medium businesses to large corporate infrastructures. <br>Focus on Windows server management and client deployment through automation and scripting.</p>
     </section>
 
     <section>
@@ -224,10 +276,10 @@
             <div class="skill-item"><i class="fas fa-server"></i> Windows Server 2016+</div>
             <div class="skill-item"><i class="si si-vmware"></i> VMware</div> <!-- Updated with VMware icon -->
             <div class="skill-item"><i class="fab fa-windows"></i> Windows 10/11</div>
-            <div class="skill-item"><i class="fas fa-tools"></i> PDQ Inventory & Deploy</div>
-            <div class="skill-item"><i class="fab fa-cloudflare"></i> CrowdStrike Falcon</div>
+            <div class="skill-item"><i class="fas fa-screwdriver-wrench"></i> PDQ Inventory & Deploy</div>
+            <div class="skill-item"><i class="fas fa-shield-halved"></i> CrowdStrike Falcon</div>
             <div class="skill-item"><i class="fas fa-shield-alt"></i> Abnormal Security</div>
-            <div class="skill-item"><i class="fas fa-sync-alt"></i> PowerAutomate</div>
+            <div class="skill-item"><i class="fas fa-arrows-rotate"></i> PowerAutomate</div>
             <div class="skill-item"><i class="fas fa-code"></i> PowerShell</div>
         </div>
     </section>
@@ -239,8 +291,9 @@
             <li>English (Fluent)</li>
         </ul>
     </section>
+    </main>
 
-    <footer>
+    <footer style="text-align:center; padding: 20px 0; font-size: 0.85em; color: #888;">
         <p>Contact: <a href="mailto:cv@jcsa.ca">cv@jcsa.ca</a></p>
     </footer>
 </body>
